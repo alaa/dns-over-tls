@@ -1,0 +1,27 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    async (1.20.1)
+      console (~> 1.0)
+      nio4r (~> 2.3)
+      timers (~> 4.1)
+    async-dns (1.2.4)
+      async-io (~> 1.15)
+    async-io (1.25.0)
+      async (~> 1.14)
+    console (1.4.0)
+    ipaddress (0.8.3)
+    nio4r (2.4.0)
+    rubydns (2.0.2)
+      async-dns (~> 1.0)
+    timers (4.3.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ipaddress
+  rubydns
+
+BUNDLED WITH
+   1.16.1

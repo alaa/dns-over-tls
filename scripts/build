@@ -1,0 +1,8 @@
+#!/bin/bash
+set -euo pipefail
+
+DOCKER_REG="alaa"
+DOCKER_REPO="dns-over-tls"
+DOCKER_TAG="0.0.1"
+
+docker build . -t ${DOCKER_REG}/${DOCKER_REPO}:${DOCKER_TAG} --no-cache

@@ -1,0 +1,12 @@
+#!/bin/bash
+set -euo pipefail
+
+DOCKER_REG="alaa"
+DOCKER_REPO="dns-over-tls"
+DOCKER_TAG="0.0.1"
+
+docker run -d \
+           -p 53:53/tcp \
+           -p 53:53/udp \
+           ${DOCKER_REG}/${DOCKER_REPO}:${DOCKER_TAG}
+

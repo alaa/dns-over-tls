@@ -1,0 +1,6 @@
+#!/bin/bash
+set -euo pipefail
+
+DEFAULT_INTERFACE="lo"
+DNS_PROXY_PORT=53
+sudo tcpdump -i ${DEFAULT_INTERFACE} port ${DNS_PROXY_PORT} -A

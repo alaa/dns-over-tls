@@ -1,0 +1,6 @@
+#!/bin/bash
+set -euo pipefail
+
+DEFAULT_GW_INTERFACE=$(ip r | grep default | awk '{print $5}')
+TLS_DNS_PORT=853
+sudo tcpdump -i ${DEFAULT_GW_INTERFACE} port ${TLS_DNS_PORT} -A
